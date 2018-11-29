@@ -49,8 +49,8 @@ Theme for GNOME-SHell as part of the Adwaita Compact theme.
 mkdir -p -m755 %{buildroot}%{_datadir}/themes/%{theme_name}
 mkdir -p -m755 %{buildroot}%{_datadir}/themes/%{theme_name}-Dark
 
-cp -pr %{theme_name}/* %{buildroot}%{_datadir}/themes/%{theme_name}
-cp -pr %{theme_name}-Dark/* %{buildroot}%{_datadir}/themes/%{theme_name}-Dark
+cp -pr Compiled/%{theme_name}/* %{buildroot}%{_datadir}/themes/%{theme_name}
+cp -pr Compiled/%{theme_name}-Dark/* %{buildroot}%{_datadir}/themes/%{theme_name}-Dark
 
 %files gtk2-theme
 %dir %{_datadir}/themes/%{theme_name}/
