@@ -1,4 +1,4 @@
-%global theme_name     Adwaita-slim
+%global theme_name     Adwaita-Slim
 
 Name:           adwaita-slim
 Version:        3.24.0
@@ -47,7 +47,10 @@ Theme for GNOME-SHell as part of the Adwaita Compact theme.
 
 %install
 mkdir -p -m755 %{buildroot}%{_datadir}/themes/%{theme_name}
-cp -pr gtk-2.0/ gtk-3.0/ gnome-shell/ %{buildroot}%{_datadir}/themes/%{theme_name}
+mkdir -p -m755 %{buildroot}%{_datadir}/themes/%{theme_name}-Dark
+
+cp -pr %{theme_name}/* %{buildroot}%{_datadir}/themes/%{theme_name}
+cp -pr %{theme_name}-Dark/* %{buildroot}%{_datadir}/themes/%{theme_name}-Dark
 
 %files gtk2-theme
 %dir %{_datadir}/themes/%{theme_name}/
