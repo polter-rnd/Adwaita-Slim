@@ -55,16 +55,22 @@ cp -pr Compiled/%{theme_name}-Dark/* %{buildroot}%{_datadir}/themes/%{theme_name
 %files gtk2-theme
 %dir %{_datadir}/themes/%{theme_name}/
 %{_datadir}/themes/%{theme_name}/gtk-2.0/
+%dir %{_datadir}/themes/%{theme_name}-Dark/
+%{_datadir}/themes/%{theme_name}-Dark/gtk-2.0/
 
 
 %files gtk3-theme
 %dir %{_datadir}/themes/%{theme_name}/
 %{_datadir}/themes/%{theme_name}/gtk-3.0/
+%dir %{_datadir}/themes/%{theme_name}-Dark/
+%{_datadir}/themes/%{theme_name}-Dark/gtk-3.0/
 
 
 %files gnome-shell-theme
 %dir %{_datadir}/themes/%{theme_name}/
 %{_datadir}/themes/%{theme_name}/gnome-shell/
+%dir %{_datadir}/themes/%{theme_name}-Dark/
+%{_datadir}/themes/%{theme_name}-Dark/gnome-shell/
 
 
 %changelog
