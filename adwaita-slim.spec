@@ -69,8 +69,6 @@ cp -pr Compiled/%{theme_name}-dark/* %{buildroot}%{_datadir}/themes/%{theme_name
 %files gnome-shell-theme
 %dir %{_datadir}/themes/%{theme_name}/
 %{_datadir}/themes/%{theme_name}/gnome-shell/
-%dir %{_datadir}/themes/%{theme_name}-dark/
-%{_datadir}/themes/%{theme_name}-dark/gnome-shell/
 
 
 %changelog
