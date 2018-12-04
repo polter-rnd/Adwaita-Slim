@@ -1,7 +1,7 @@
 %global theme_name     Adwaita-Slim
 
 Name:           adwaita-slim
-Version:        3.24.0
+Version:        3.24.1
 Release:        1%{?dist}
 Summary:        A slim Adwaita version for GNOME-Shell, GTK+ 2 and 3
 
