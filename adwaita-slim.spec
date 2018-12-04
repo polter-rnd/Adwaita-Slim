@@ -47,30 +47,30 @@ Theme for GNOME-SHell as part of the Adwaita Compact theme.
 
 %install
 mkdir -p -m755 %{buildroot}%{_datadir}/themes/%{theme_name}
-mkdir -p -m755 %{buildroot}%{_datadir}/themes/%{theme_name}-Dark
+mkdir -p -m755 %{buildroot}%{_datadir}/themes/%{theme_name}-dark
 
 cp -pr Compiled/%{theme_name}/* %{buildroot}%{_datadir}/themes/%{theme_name}
-cp -pr Compiled/%{theme_name}-Dark/* %{buildroot}%{_datadir}/themes/%{theme_name}-Dark
+cp -pr Compiled/%{theme_name}-dark/* %{buildroot}%{_datadir}/themes/%{theme_name}-dark
 
 %files gtk2-theme
 %dir %{_datadir}/themes/%{theme_name}/
 %{_datadir}/themes/%{theme_name}/gtk-2.0/
-%dir %{_datadir}/themes/%{theme_name}-Dark/
-%{_datadir}/themes/%{theme_name}-Dark/gtk-2.0/
+%dir %{_datadir}/themes/%{theme_name}-dark/
+%{_datadir}/themes/%{theme_name}-dark/gtk-2.0/
 
 
 %files gtk3-theme
 %dir %{_datadir}/themes/%{theme_name}/
 %{_datadir}/themes/%{theme_name}/gtk-3.0/
-%dir %{_datadir}/themes/%{theme_name}-Dark/
-%{_datadir}/themes/%{theme_name}-Dark/gtk-3.0/
+%dir %{_datadir}/themes/%{theme_name}-dark/
+%{_datadir}/themes/%{theme_name}-dark/gtk-3.0/
 
 
 %files gnome-shell-theme
 %dir %{_datadir}/themes/%{theme_name}/
 %{_datadir}/themes/%{theme_name}/gnome-shell/
-%dir %{_datadir}/themes/%{theme_name}-Dark/
-%{_datadir}/themes/%{theme_name}-Dark/gnome-shell/
+%dir %{_datadir}/themes/%{theme_name}-dark/
+%{_datadir}/themes/%{theme_name}-dark/gnome-shell/
 
 
 %changelog

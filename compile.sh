@@ -8,19 +8,19 @@ COMMON_FOLDER="src/gtk-2.0/common-files"
 ASSETS_FOLDER="src/gtk-2.0/variant-assets"
 ###
   echo "Compiling and copying..."
-for variant in "" "-Dark"; do
+for variant in "" "-dark"; do
   sassc -t expanded src/gnome-shell/gnome-shell${1,,}.scss $OUTPUT/$THEME${1^}/gnome-shell/gnome-shell.css
 done
 
 for variant in "","" "-Dark","-dark"; do
-  if [ $1="-Dark" ];
+  if [ $1="-dark" ];
     then
-        sassc -t expanded src/gtk-3.0/gtk-dark.scss $OUTPUT/$THEME-Dark/gtk-3.0/gtk.css
-        cp src/gtk-3.0/assets/* $OUTPUT/$THEME-Dark/gtk-3.0/assets
-        cp src/gtk-2.0/common-files/* $OUTPUT/$THEME-Dark/gtk-2.0/
-        cp src/gtk-2.0/dark-variant-files/* $OUTPUT/$THEME-Dark/gtk-2.0/
-        cp src/gtk-2.0/assets/dark-assets/* $OUTPUT/$THEME-Dark/gtk-2.0/assets
-        cp src/gtk-2.0/gtkrc-dark $OUTPUT/$THEME-Dark/gtk-2.0/gtkrc
+        sassc -t expanded src/gtk-3.0/gtk-dark.scss $OUTPUT/$THEME-dark/gtk-3.0/gtk.css
+        cp src/gtk-3.0/assets/* $OUTPUT/$THEME-dark/gtk-3.0/assets
+        cp src/gtk-2.0/common-files/* $OUTPUT/$THEME-dark/gtk-2.0/
+        cp src/gtk-2.0/dark-variant-files/* $OUTPUT/$THEME-dark/gtk-2.0/
+        cp src/gtk-2.0/assets/dark-assets/* $OUTPUT/$THEME-dark/gtk-2.0/assets
+        cp src/gtk-2.0/gtkrc-dark $OUTPUT/$THEME-dark/gtk-2.0/gtkrc
     fi
         sassc -t expanded src/gtk-3.0/gtk.scss $OUTPUT/$THEME/gtk-3.0/gtk.css
         sassc -t expanded src/gtk-3.0/gtk-dark.scss $OUTPUT/$THEME/gtk-3.0/gtk-dark.css
